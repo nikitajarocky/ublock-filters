@@ -151,4 +151,3 @@ youtube.com##ytd-video-renderer:has-text(УЖАС)
 youtube.com##ytd-video-renderer:has-text(НЕ ПОВЕРИТЕ)
 youtube.com##ytd-video-renderer:has-text(ШОК)
 youtube.com##ytd-video-renderer:has(h3:matches-css(text-transform: uppercase))
-
