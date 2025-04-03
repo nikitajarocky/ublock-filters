@@ -206,3 +206,6 @@ google.*##div:has(h3):has-text(ШОК)
 google.*##div:has(h3):has-text(СЕНСАЦИЯ)
 
 youtube.com##ytd-watch-flexy:has-text(война)
+
+youtube.com##body:has-text(война)
+
