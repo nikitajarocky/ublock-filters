@@ -55,6 +55,8 @@ youtube.com##ytd-video-renderer:has-text(женщина должна)
 youtube.com##ytd-video-renderer:has-text(психология отношений)
 youtube.com##ytd-video-renderer:has-text(манипуляция сознанием)
 youtube.com##ytd-video-renderer:has-text(закон притяжения)
+youtube.com##ytd-video-renderer:has-text(истина)
+youtube.com##ytd-video-renderer:has-text(делайте это)
 
 ! === АНАЛИТИКА БЕЗ СОДЕРЖАНИЯ ===
 youtube.com##ytd-video-renderer:has-text(разбор ситуации)
