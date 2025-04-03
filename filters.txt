@@ -134,3 +134,74 @@ google.*##div:has(h3):has-text(СВО)
 google.*##div:has(h3):has-text(санкции)
 google.*##div:has(h3):has-text(война)
 google.*##div:has(h3):has-text(госдума)
+
+! === Политика, кликбейт, смерть и сенсации ===
+youtube.com##ytd-video-renderer:has-text(Путин)
+youtube.com##ytd-video-renderer:has-text(Навальный)
+youtube.com##ytd-video-renderer:has-text(Зеленский)
+youtube.com##ytd-video-renderer:has-text(война)
+youtube.com##ytd-video-renderer:has-text(СВО)
+youtube.com##ytd-video-renderer:has-text(госдума)
+youtube.com##ytd-video-renderer:has-text(митинг)
+youtube.com##ytd-video-renderer:has-text(санкции)
+youtube.com##ytd-video-renderer:has-text(СЕНСАЦИЯ)
+youtube.com##ytd-video-renderer:has-text(СРОЧНО)
+youtube.com##ytd-video-renderer:has-text(УМЕР)
+youtube.com##ytd-video-renderer:has-text(УЖАС)
+youtube.com##ytd-video-renderer:has-text(НЕ ПОВЕРИТЕ)
+youtube.com##ytd-video-renderer:has-text(ШОК)
+youtube.com##ytd-video-renderer:has(h3:matches-css(text-transform: uppercase))
+
+! === Заблокировать сайты полностью (любой контент) ===
+||rbc.ru^
+||lenta.ru^
+||meduza.io^
+||ria.ru^
+||kommersant.ru^
+||currenttime.tv^
+||novayagazeta.ru^
+||svoboda.org^
+||tvrain.ru^
+||echo.msk.ru^
+||bbcrussian.com^
+||polit.ru^
+||snob.ru^
+||pravda.ru^
+
+! === Блокировка embed, iframe, картинок и скриптов с этих сайтов ===
+||rbc.ru^$third-party
+||lenta.ru^$third-party
+||meduza.io^$third-party
+||ria.ru^$third-party
+||kommersant.ru^$third-party
+||currenttime.tv^$third-party
+||novayagazeta.ru^$third-party
+||echo.msk.ru^$third-party
+||svoboda.org^$third-party
+
+! === Блок результатов в Google ===
+google.*##div:has(h3):has-text(Путин)
+google.*##div:has(h3):has-text(Навальный)
+google.*##div:has(h3):has-text(Зеленский)
+google.*##div:has(h3):has-text(война)
+google.*##div:has(h3):has-text(СВО)
+google.*##div:has(h3):has-text(санкции)
+google.*##div:has(h3):has-text(госдума)
+google.*##div:has(h3):has-text(митинг)
+
+! === Блок результатов в Яндекс ===
+yandex.*##.serp-item:has-text(Путин)
+yandex.*##.serp-item:has-text(Навальный)
+yandex.*##.serp-item:has-text(Зеленский)
+yandex.*##.serp-item:has-text(война)
+yandex.*##.serp-item:has-text(санкции)
+yandex.*##.serp-item:has-text(госдума)
+yandex.*##.serp-item:has-text(митинг)
+
+! === Блок кликбейта в поиске ===
+google.*##div:has(h3):has-text(СРОЧНО)
+google.*##div:has(h3):has-text(УМЕР)
+google.*##div:has(h3):has-text(УЖАС)
+google.*##div:has(h3):has-text(ШОК)
+google.*##div:has(h3):has-text(СЕНСАЦИЯ)
+
