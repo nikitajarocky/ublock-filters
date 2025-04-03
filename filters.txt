@@ -151,3 +151,116 @@ youtube.com##ytd-video-renderer:has-text(УЖАС)
 youtube.com##ytd-video-renderer:has-text(НЕ ПОВЕРИТЕ)
 youtube.com##ytd-video-renderer:has-text(ШОК)
 youtube.com##ytd-video-renderer:has(h3:matches-css(text-transform: uppercase))
+
+! === Блокировка российских пропагандистских сайтов ===
+||tvzvezda.ru^
+||vgtrk.ru^
+||russia.tv^
+||smotrim.ru^
+||1tv.ru^
+||rtr-vesti.ru^
+||vesti.ru^
+||russia24.pro^
+||russia1.tv^
+||rt.com^
+||sputniknews.com^
+||sputniknews.ru^
+||lifenews.ru^
+||tsargrad.tv^
+||ren.tv^
+||ntv.ru^
+
+! === Блокировка всего трафика с этих сайтов (в iframe, embed, скриптах) ===
+||tvzvezda.ru^$third-party
+||vgtrk.ru^$third-party
+||russia.tv^$third-party
+||smotrim.ru^$third-party
+||1tv.ru^$third-party
+||vesti.ru^$third-party
+||rt.com^$third-party
+||sputniknews.com^$third-party
+||lifenews.ru^$third-party
+||tsargrad.tv^$third-party
+||ren.tv^$third-party
+||ntv.ru^$third-party
+
+! === Google: скрыть пропагандистские результаты ===
+google.*##div:has(h3):has-text(Россия 24)
+google.*##div:has(h3):has-text(Вести недели)
+google.*##div:has(h3):has-text(Соловьев)
+google.*##div:has(h3):has-text(Скабеева)
+google.*##div:has(h3):has-text(Звезда)
+google.*##div:has(h3):has-text(RT)
+google.*##div:has(h3):has-text(Спутник)
+google.*##div:has(h3):has-text(Тсарьград)
+google.*##div:has(h3):has-text(Lifenews)
+
+! === Яндекс: скрыть пропагандистские сайты ===
+yandex.*##.serp-item:has-text(Россия 24)
+yandex.*##.serp-item:has-text(Соловьев)
+yandex.*##.serp-item:has-text(Вести)
+yandex.*##.serp-item:has-text(RT)
+yandex.*##.serp-item:has-text(Спутник)
+yandex.*##.serp-item:has-text(Тсарьград)
+yandex.*##.serp-item:has-text(Звезда)
+
+! === Блокировка каналов российской пропаганды, эзотерики, псевдонауки и кликбейта ===
+youtube.com##ytd-video-renderer:has-text(ПРАВДА НА ТВ)
+youtube.com##ytd-video-renderer:has-text(Пламен Пасков)
+youtube.com##ytd-video-renderer:has-text(Исцеление Звуком)
+youtube.com##ytd-video-renderer:has-text(Тропа самопознания)
+youtube.com##ytd-video-renderer:has-text(ЗАПРЕТНЫЕ ЛЕКЦИИ)
+youtube.com##ytd-video-renderer:has-text(Сила Слова)
+youtube.com##ytd-video-renderer:has-text(СОЮЗНОЕ ВЕЧЕ)
+youtube.com##ytd-video-renderer:has-text(Хозяин)
+youtube.com##ytd-video-renderer:has-text(Путь Самопознания)
+youtube.com##ytd-video-renderer:has-text(Академики Картавенко)
+youtube.com##ytd-video-renderer:has-text(JustBe)
+youtube.com##ytd-video-renderer:has-text(ГОЛОВАНОВ)
+youtube.com##ytd-video-renderer:has-text(Настоящее Время)
+youtube.com##ytd-video-renderer:has-text(DW на русском)
+youtube.com##ytd-video-renderer:has-text(Радио АВРОРА)
+youtube.com##ytd-video-renderer:has-text(Пламен Пасков Ru)
+youtube.com##ytd-video-renderer:has-text(Светлана Зубарева)
+youtube.com##ytd-video-renderer:has-text(Мудрость Великих Учителей)
+youtube.com##ytd-video-renderer:has-text(REEBOOTER)
+youtube.com##ytd-video-renderer:has-text(МАРИША ЭЛЬФ)
+
+! === Блок по ключевым словам в названиях видео ===
+youtube.com##ytd-video-renderer:has-text(ПУТИН)
+youtube.com##ytd-video-renderer:has-text(СВО)
+youtube.com##ytd-video-renderer:has-text(ТРАМП)
+youtube.com##ytd-video-renderer:has-text(ВОЙНА)
+youtube.com##ytd-video-renderer:has-text(МИРОВОЙ)
+youtube.com##ytd-video-renderer:has-text(ЗАГОВОР)
+youtube.com##ytd-video-renderer:has-text(ДУХ)
+youtube.com##ytd-video-renderer:has-text(ПРОЗРЕНИЕ)
+youtube.com##ytd-video-renderer:has-text(ГАРЯЕВ)
+youtube.com##ytd-video-renderer:has-text(АСТРАЛ)
+youtube.com##ytd-video-renderer:has-text(САКРАЛЬНАЯ)
+youtube.com##ytd-video-renderer:has-text(МАНТРА)
+youtube.com##ytd-video-renderer:has-text(ЭНЕРГИЯ)
+youtube.com##ytd-video-renderer:has-text(ПАНИКА)
+youtube.com##ytd-video-renderer:has-text(ЭФИР)
+youtube.com##ytd-video-renderer:has-text(НАСТОЯЩЕЕ ВРЕМЯ)
+youtube.com##ytd-video-renderer:has-text(ПРАВДА)
+
+! === Дополнительные фильтры по названиям видео ===
+youtube.com##ytd-video-renderer:has-text(Паника в Европе)
+youtube.com##ytd-video-renderer:has-text(Германия возвращается)
+youtube.com##ytd-video-renderer:has-text(Пошлины Трампа)
+youtube.com##ytd-video-renderer:has-text(Наёмники Азов)
+youtube.com##ytd-video-renderer:has-text(HEOHAZИ)
+youtube.com##ytd-video-renderer:has-text(немецкие политики сошли с ума)
+youtube.com##ytd-video-renderer:has-text(Великая тайна воды)
+youtube.com##ytd-video-renderer:has-text(память воды)
+youtube.com##ytd-video-renderer:has-text(Чистка Ауры)
+youtube.com##ytd-video-renderer:has-text(Сияние Ауры)
+youtube.com##ytd-video-renderer:has-text(Обновление Энергии)
+youtube.com##ytd-video-renderer:has-text(Исцеление Дыр в АУРЕ)
+
+! === По названиям каналов, упомянутым в этих примерах ===
+youtube.com##ytd-video-renderer:has-text(Новости сегодня)
+youtube.com##ytd-video-renderer:has-text(Old Dutchman)
+youtube.com##ytd-video-renderer:has-text(Дмитрий Горбачев)
+youtube.com##ytd-video-renderer:has-text(Элан Космическая Музыка)
