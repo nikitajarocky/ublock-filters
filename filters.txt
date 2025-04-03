@@ -1,0 +1,6 @@
+! === Пример фильтра для YouTube ===
+youtube.com##ytd-video-renderer:has-text(ПОЛИТИКА)
+youtube.com##ytd-video-renderer:has-text(СРОЧНО)
+youtube.com##ytd-video-renderer:has-text(УМЕР)
+youtube.com##ytd-video-renderer:has-text(УЖАС)
+youtube.com##ytd-video-renderer:has(h3:matches-css(text-transform: uppercase))
